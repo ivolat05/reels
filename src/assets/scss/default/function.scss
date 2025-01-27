@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@function rem($pixel) {
+	@if math.is-unitless($pixel) {
+		@return math.div($pixel, 16)+rem;
+	}
+
+	@else {
+		@error 'Не используйте единицы измерения при работе с функцией rem()! Передавайте аргументом только числа.';
+	}
+}
+
+/*
+$pixel-value значение которое необходимо перевести
+$context шрифт относлительнь которого необходимо перевести
+*/
+
+
+@function em($pixel-value, $context: 16px) {
+	@return math.div($pixel-value, $context)+em;
+}

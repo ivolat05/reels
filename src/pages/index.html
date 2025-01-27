@@ -6,9 +6,15 @@
 )
 
 <body>
-	@@include("../html/header/header.html" )
+	<div class="page">
+		@@include("../html/header/header.html" )
+		<main>
+			@@include("../html/section/main.html" )
+			@@include("../html/section/sampler.html" )
+		</main>
+		@@include("../html/footer/footer.html")
+	</div>
 
-	@@include("../html/footer/footer.html")
 	<script src="assets/js/app.min.js"></script>
 </body>
 

@@ -1,0 +1,116 @@
+.sampler {
+	padding-top: rem(15);
+
+	@media($mobile) {
+		padding-top: rem(7);
+	}
+}
+
+.sampler__top {
+	width: 100%;
+
+	img {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+.sampler__wrapp {
+	background: rgba(244, 246, 250, 0.02);
+	box-shadow: 56px 4px 117.8px -49px rgba(0, 0, 0, 0.09), -55px 4px 121.1px -49px rgba(0, 0, 0, 0.07), 0px 51.3947px 94.2236px -32.1217px #DBE0EA;
+	backdrop-filter: blur(11.2426px);
+	border-radius: rem(34.796);
+
+	@media($mobile) {
+		border-radius: rem(8);
+	}
+}
+
+.sampler__body-text {
+	max-width: rem(399);
+	font-style: normal;
+	font-weight: 400;
+	@include fluid-text(25, 15);
+	line-height: 117%;
+	color: #1B1B1B;
+
+	@media($tablet) {
+		text-align: center;
+	}
+
+	@media($mobile) {
+		max-width: rem(240);
+	}
+}
+
+.sampler__counters {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: fit-content;
+	background: #F4F6FA;
+	box-shadow: inset 0px -2px 0px #FFFFFF, inset 0px 4px 7px rgba(0, 0, 0, 0.09), inset 0px -1px 0.1px #FFFFFF, inset 0px 1px 1.8px rgba(0, 0, 0, 0.25);
+	border-radius: rem(17);
+	padding: rem(17) rem(34);
+	gap: rem(15);
+
+	@media($mobile) {
+		padding: rem(10) rem(17) rem(10) rem(17);
+		gap: rem(5);
+		border-radius: rem(8);
+	}
+}
+
+.sampler__counters-coll {
+	font-style: normal;
+	font-weight: 700;
+	@include fluid-text(66.6667, 33.61);
+	line-height: 117%;
+
+	color: #1B1B1B;
+
+	background: #FCFDFF;
+	border: rem(1) solid #EBEBEB;
+	box-shadow: 0px 14px 10.3px -12px rgba(0, 0, 0, 0.38);
+	border-radius: rem(17);
+	padding: rem(8) rem(25) 0 rem(25);
+	position: relative;
+
+	@media($mobile) {
+		padding: rem(4) rem(12) 0 rem(12);
+		border-radius: rem(8);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		height: rem(1);
+		background: #EBEBEB;
+	}
+}
+
+.sampler__body {
+	display: flex;
+
+	justify-content: flex-start;
+	padding: rem(50) rem(65) rem(65) rem(65);
+	gap: rem(20);
+
+	@media($laptop) {
+		padding: rem(50);
+	}
+
+	@media($tablet) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media($mobile) {
+		padding: rem(18) rem(10) rem(20) rem(10);
+		gap: rem(10);
+	}
+}

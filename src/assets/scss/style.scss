@@ -3,7 +3,10 @@
 @import "../scss/vendor/swiper-bundle.min.scss";
 @import "../scss/vendor/fonts.scss";
 
+
 // default
+@import "../scss/default/function.scss";
+@import "../scss/default/mixin.scss";
 @import "../scss/default/default.scss";
 @import "../scss/default/variables.scss";
 @import "../scss/default/margins.scss";
@@ -12,3 +15,7 @@
 @import "../scss/default/components.scss";
 @import "../scss/default/header.scss";
 @import "../scss/default/footer.scss";
+
+// block
+@import "../scss/block/main.scss";
+@import "../scss/block/sampler.scss";

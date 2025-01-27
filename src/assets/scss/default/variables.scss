@@ -8,9 +8,9 @@
 
 
 // media
-$macbook: "max-width: 1680px";
-$notebook: "max-width: 1440px";
-$laptop: "max-width: 1240px";
-$tablet: "max-width: 992px";
-$min-tablet: "min-width: 992px";
-$mobile: "max-width: 767px";
+$macbook: "max-width: #{rem(1680)}";
+$notebook: "max-width:#{rem(1440)}";
+$laptop: "max-width:#{rem(1240)}";
+$tablet: "max-width: #{rem(992)}";
+$min-tablet: "min-width:#{rem(992)} ";
+$mobile: "max-width:#{rem(767)} ";
