@@ -22,7 +22,9 @@
 	border-radius: rem(34.796);
 
 	@media($mobile) {
-		border-radius: rem(8);
+		border-radius: rem(8.26237);
+		box-shadow: 13.2973px 0.949807px 27.9718px -11.6351px rgba(0, 0, 0, 0.09), -13.0598px 0.949807px 28.7554px -11.6351px rgba(0, 0, 0, 0.07), 0px 12.2038px 22.3736px -7.62735px #DBE0EA;
+		backdrop-filter: blur(2.66957px);
 	}
 }
 
@@ -96,7 +98,7 @@
 	display: flex;
 
 	justify-content: flex-start;
-	padding: rem(50) rem(65) rem(65) rem(65);
+	padding: rem(50) rem(65) rem(46) rem(65);
 	gap: rem(20);
 
 	@media($laptop) {
