@@ -1,0 +1,103 @@
+.subscript {
+	background: url("../../assets/img/circls/back.png") no-repeat center center/cover;
+	padding-top: rem(84);
+}
+
+
+.subscript__swiper {
+	padding-top: rem(98);
+}
+
+@media(min-width:rem(762)) {
+	.subscript__swiper-wrapp {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: rem(29);
+
+		grid-template-areas:
+			"subscript__box-1 subscript__box-2 subscript__box-3 subscript__box-4"
+			"... subscript__box-2 subscript__box-3 subscript__box-5"
+		;
+	}
+
+	.subscript__box-1 {
+		grid-area: subscript__box-1;
+	}
+
+	.subscript__box-2 {
+		grid-area: subscript__box-2;
+	}
+
+	.subscript__box-3 {
+		grid-area: subscript__box-3;
+	}
+
+	.subscript__box-4 {
+		grid-area: subscript__box-4;
+	}
+
+	.subscript__box-5 {
+		grid-area: subscript__box-5;
+	}
+}
+
+.subscript__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: rem(35);
+	height: rem(25);
+
+	img,
+	svg {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		flex-shrink: 0;
+	}
+
+	@media($mobile) {
+		width: rem(27);
+		height: rem(21);
+	}
+}
+
+.subscript__box-title {
+	font-style: normal;
+	font-weight: 500;
+	@include fluid-text(28.8889, 25);
+	line-height: 103%;
+
+	color: #1B1B1B;
+}
+
+.subscript__box-text {
+	margin-top: auto;
+	margin-bottom: 0;
+	padding-top: rem(40);
+
+	font-style: normal;
+	font-weight: 400;
+	@include fluid-text(16, 15);
+	line-height: 134%;
+
+	letter-spacing: 0.03em;
+
+	color: rgba(0, 0, 0, 0.86);
+}
+
+.subscript__box-img {
+	display: block;
+
+	img,
+	svg {
+		width: 100%;
+	}
+}
+
+.subscript__box {
+	background: #FBFAFF;
+	border: 1px solid #E9E2FF;
+	border-radius: rem(42);
+
+}
