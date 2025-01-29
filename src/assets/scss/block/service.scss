@@ -93,7 +93,11 @@
 	}
 
 	.service__box-wrapp {
-		padding-top: rem(55);
+		padding-top: rem(40);
+
+		@media($mobile) {
+			padding-top: rem(55);
+		}
 	}
 }
 
@@ -156,6 +160,8 @@
 	}
 
 	.service__box-wrapp {
+		padding-top: rem(8);
+
 		@media($mobile) {
 			padding-top: rem(15);
 		}

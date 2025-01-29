@@ -1,0 +1,9 @@
+.functional {
+	background: url("../../assets/img/circls/back.png") no-repeat center bottom/contain;
+
+	padding-bottom: rem(155);
+
+	@media($mobile) {
+		padding-bottom: 80px;
+	}
+}

@@ -1,0 +1,145 @@
+.suitable-title {
+	background: linear-gradient(180.02deg, #FFFFFF 25.13%, #FFBB8E 117.71%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	line-height: 100%;
+}
+
+.suitable {
+	padding-top: rem(140);
+	isolation: isolate;
+
+	@media($mobile) {
+		padding-top: rem(50);
+	}
+}
+
+.suitable-text {
+	max-width: rem(500);
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: rem(20);
+
+	font-style: normal;
+	font-weight: 400;
+	@include fluid-text(20, 15);
+	line-height: 134%;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #FFFFFF;
+
+	@media($mobile) {
+		padding-top: rem(5);
+	}
+}
+
+.suitable-img {
+	position: relative;
+	margin-top: rem(45);
+	display: block;
+
+	img,
+	svg {
+		width: 100%;
+		object-fit: contain;
+
+
+	}
+
+	@media($mobile) {
+		margin-left: - rem(20);
+		margin-right: - rem(20);
+		margin-top: rem(20);
+	}
+
+	&::after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		width: rem(600);
+		height: rem(100);
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, -50%);
+
+		background: #FF6500;
+		mix-blend-mode: exclusion;
+		filter: blur(rem(143.7));
+	}
+}
+
+.suitable__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: rem(23);
+	height: rem(23);
+
+	img,
+	svg {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		flex-shrink: 0;
+	}
+}
+
+.suitable__inner-title {
+	font-style: normal;
+	font-weight: 500;
+	@include fluid-text(28.8889, 25);
+	line-height: 103%;
+	color: #FFFFFF;
+	padding-top: rem(30);
+
+	@media($mobile) {
+		padding-top: rem(20);
+	}
+
+}
+
+.suitable__inner {
+	max-width: rem(330);
+
+	@media(max-width:rem(600)) {
+		max-width: 100%;
+	}
+}
+
+.suitable__inner-text {
+	font-style: normal;
+	font-weight: 400;
+	@include fluid-text(16, 15);
+	line-height: 134%;
+
+	letter-spacing: 0.03em;
+
+	color: rgba(255, 255, 255, 0.48);
+	padding-top: rem(25);
+
+	@media($mobile) {
+		padding-top: rem(20);
+	}
+}
+
+.suitable__list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-between;
+	gap: rem(40);
+	padding-top: rem(35);
+
+	@media(max-width:rem(1180)) {
+		grid-template-columns: repeat(2, auto);
+		justify-content: space-evenly;
+	}
+
+	@media(max-width:rem(600)) {
+		grid-template-columns: 100%;
+		padding-top: rem(25);
+		gap: rem(30);
+	}
+
+}

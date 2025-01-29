@@ -1,10 +1,15 @@
 let subcriptSwiper;
-
+const breakpointInPixelsInitial = remToPixels(37.5);
 function initialSubcriptSwiper() {
 	subcriptSwiper = new Swiper(".subscript__swiper", {
 		loop: false,
 		spaceBetween: 10,
-		slidesPerView: 2,
+		slidesPerView: 1,
+		breakpoints: {
+			600: {
+				slidesPerView: 2,
+			},
+		},
 	});
 }
 

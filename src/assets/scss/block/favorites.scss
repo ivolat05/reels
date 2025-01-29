@@ -1,0 +1,135 @@
+.favorites-title-wrapp {
+	display: block;
+
+	font-family: inherit;
+
+	@media(max-width:rem(650)) {
+		display: inline;
+	}
+
+}
+
+.favorites {
+	padding-top: rem(120);
+
+	@media($mobile) {
+		padding-top: rem(60);
+	}
+}
+
+.favorites__inner-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: rem(23);
+	height: rem(21);
+	grid-area: favorites__inner-icon;
+
+	img,
+	svg {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		flex-shrink: 0;
+	}
+}
+
+.favorites__inner-title {
+	grid-area: favorites__inner-title;
+
+	@include fluid-text(28.8889, 23);
+	font-style: normal;
+	font-weight: 500;
+	line-height: 103%;
+	color: #FFFFFF;
+}
+
+.favorites__inner-text {
+	font-style: normal;
+	font-weight: 400;
+	@include fluid-text(16, 16);
+	line-height: 134%;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.56);
+	padding-top: rem(20);
+	max-width: rem(365);
+}
+
+.favorites__inner-text {
+	grid-area: favorites__inner-text;
+}
+
+.favorites__inner {
+	display: grid;
+	grid-template-columns: rem(23) 1fr;
+	grid-template-areas:
+		"favorites__inner-icon favorites__inner-title"
+		"favorites__inner-icon favorites__inner-text"
+	;
+	align-items: flex-start;
+	gap: 0 rem(25);
+
+	@media(max-width:rem(600)) {
+		grid-template-areas:
+			"favorites__inner-icon favorites__inner-title"
+			"favorites__inner-text favorites__inner-text"
+		;
+
+		gap: 0 rem(15);
+	}
+}
+
+.favorites__inner+.favorites__inner {
+	border-top: rem(1) solid rgba(255, 255, 255, .28);
+	margin-top: rem(59);
+	padding-top: rem(34);
+	padding-bottom: rem(10);
+
+	@media($mobile) {
+		margin-top: rem(40);
+	}
+}
+
+.favorites__wrapp {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	padding-top: rem(70);
+
+	@media($tablet) {
+		display: block;
+	}
+}
+
+.favorites__list {
+	width: 42.5%;
+	padding-top: rem(50);
+
+	@media($tablet) {
+		width: 100%;
+		padding-top: 0;
+	}
+}
+
+.favorites__img {
+	width: 55%;
+	position: relative;
+	display: block;
+
+	img {
+		position: relative;
+		width: calc(100% + 8vw);
+		object-fit: contain;
+		margin-left: -10vw;
+
+		@media($tablet) {
+			width: calc(100% + 12vw);
+			margin-left: -5vw;
+		}
+	}
+
+	@media($tablet) {
+		width: 100%;
+		margin-top: rem(10);
+	}
+}
