@@ -181,7 +181,7 @@
 }
 
 .reivews-btn {
-	display: flex;
+	display: none;
 	align-items: center;
 	justify-content: center;
 	width: fit-content;
@@ -201,6 +201,9 @@
 
 	color: #FFFFFF;
 
+	cursor: pointer;
 
-
+	@media(max-width:rem(800)) {
+		display: flex;
+	}
 }
