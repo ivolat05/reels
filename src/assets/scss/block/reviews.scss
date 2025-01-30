@@ -1,209 +1,215 @@
 .reviews__list {
-	column-count: 3;
-	column-gap: rem(20);
-	padding-top: rem(70);
-	position: relative;
+    column-count: 3;
+    column-gap: rem(20);
+    padding-top: rem(70);
+    position: relative;
 
-	@media(max-width:rem(1100)) {
-		column-count: 2;
-	}
+    @media(max-width:rem(1100)) {
+        column-count: 2;
+    }
 
-	@media(max-width:rem(800)) {
-		column-count: initial;
-	}
+    @media(max-width:rem(800)) {
+        column-count: initial;
+    }
 
-	@media($mobile) {
-		padding-top: rem(20);
-	}
+    @media($mobile) {
+        padding-top: rem(20);
+    }
 }
 
 .reviews-title {
-	@include fluid-text(80, 44);
+    @include fluid-text(80, 44);
 }
 
 .reviews {
-	padding-top: rem(165);
+    padding-top: rem(165);
 
-	@media($mobile) {
-		padding-top: rem(95);
-	}
+    @media($mobile) {
+        padding-top: rem(95);
+    }
 }
 
 .reviews__stars-list {
-	display: flex;
-	align-items: center;
-	gap: rem(8);
+    display: flex;
+    align-items: center;
+    gap: rem(8);
 }
 
 .reviews__stars-inner {
-	flex-shrink: 0;
-	width: rem(15);
-	height: rem(15);
+    flex-shrink: 0;
+    width: rem(15);
+    height: rem(15);
 
-	svg,
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		flex-shrink: 0;
-	}
+    svg,
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
 }
 
 .reviews__inner {
-	display: inline-block;
-	background: #121212;
-	border: rem(1) solid #202020;
-	border-radius: rem(42);
-	margin-top: rem(20);
-	padding: 36px 53px 40px 53px;
-	display: inline-flex;
-	flex-direction: column;
+    display: inline-block;
+    background: #121212;
+    border: rem(1) solid #202020;
+    border-radius: rem(42);
+    margin-top: rem(20);
+    padding: 36px 53px 40px 53px;
+    display: inline-flex;
+    flex-direction: column;
 
-	&:nth-child(2) {
-		height: rem(450);
+    &:nth-child(2) {
+        height: rem(450);
 
-		@media(max-width:rem(800)) {
-			height: auto;
-		}
+        @media(max-width:rem(800)) {
+            height: auto;
+        }
 
-	}
+    }
 
-	&:nth-child(3) {
-		height: rem(385);
+    &:nth-child(3) {
+        height: rem(385);
 
-		@media(max-width:rem(800)) {
-			height: auto;
-		}
-	}
+        @media(max-width:rem(800)) {
+            height: auto;
+        }
+    }
 
-	&:nth-child(7),
-	&:nth-child(8) {
-		height: rem(395);
+    &:nth-child(7),
+    &:nth-child(8) {
+        height: rem(395);
 
-		@media(max-width:rem(800)) {
-			height: auto;
-		}
-	}
+        @media(max-width:rem(800)) {
+            height: auto;
+        }
+    }
 
-	@media($mobile) {
-		padding: rem(27) rem(20) rem(20) rem(25);
-	}
+    @media($mobile) {
+        padding: rem(27) rem(20) rem(20) rem(25);
+    }
 }
 
 @media(max-width:rem(800)) {
-	.reviews__inner {
-		display: none;
+    .reviews__inner {
+        display: none;
 
-		&:nth-child(2),
-		&:nth-child(3),
-		&:nth-child(4) {
-			display: inline-flex;
-		}
-	}
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            display: inline-flex;
+        }
+    }
 }
 
 .reviews__text {
-	font-style: normal;
-	font-weight: 400;
-	@include fluid-text(16, 15);
-	line-height: 157%;
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-text(16, 15);
+    line-height: 157%;
 
-	letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
 
-	color: #FFFFFF;
-	padding-top: rem(25);
+    color: #FFFFFF;
+    padding-top: rem(25);
 }
 
 .reviews__user-name {
-	font-style: normal;
-	font-weight: 400;
-	@include fluid-text(16, 15);
-	line-height: 157%;
-	letter-spacing: 0.03em;
-	color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    @include fluid-text(16, 15);
+    line-height: 157%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    span {
+        @media(max-width:rem(800)) {
+            opacity: .48;
+        }
+    }
 }
 
 .reviews__user-img {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-shrink: 0;
-	width: rem(46);
-	height: rem(46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: rem(46);
+    height: rem(46);
 
-	img,
-	svg {
-		width: 100%;
-		height: 100%;
-		object-fit: contain;
-		flex-shrink: 0;
-	}
+    img,
+    svg {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
 
-	@media($mobile) {
-		width: rem(39);
-		height: rem(39);
-	}
+    @media($mobile) {
+        width: rem(39);
+        height: rem(39);
+    }
 }
 
 .reviews__user-row {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	gap: rem(15);
-	margin-top: auto;
-	margin-bottom: 0;
-	padding-top: rem(50);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(15);
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: rem(50);
 
-	@media($mobile) {
-		padding-top: rem(40);
-	}
+    @media($mobile) {
+        padding-top: rem(40);
+    }
 }
 
 .reviews {
-	position: relative;
+    position: relative;
 }
 
 .reivews-input {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: -2;
-	opacity: 0;
-	width: 0;
-	height: 0;
-	overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 
 
 .reivews-input:checked~.reviews__inner {
-	display: inline-flex !important;
+    display: inline-flex !important;
 }
 
 .reivews-btn {
-	display: none;
-	align-items: center;
-	justify-content: center;
-	width: fit-content;
-	margin-left: auto;
-	margin-right: auto;
-	padding: rem(15) rem(37);
-	margin-top: rem(25);
-	background: #FF6500;
-	border-radius: 15px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: rem(15) rem(37);
+    margin-top: rem(25);
+    background: #FF6500;
+    border-radius: 15px;
 
-	font-style: normal;
-	font-weight: 500;
-	font-size: rem(14);
-	line-height: 141%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: 141%;
 
-	letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
 
-	color: #FFFFFF;
+    color: #FFFFFF;
 
-	cursor: pointer;
+    cursor: pointer;
 
-	@media(max-width:rem(800)) {
-		display: flex;
-	}
+    @media(max-width:rem(800)) {
+        display: flex;
+    }
 }

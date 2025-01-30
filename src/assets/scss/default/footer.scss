@@ -1,0 +1,250 @@
+ .footer-text-back {
+ 	width: 98%;
+ 	margin-top: rem(33);
+ 	margin-left: rem(20);
+
+ 	@media($mobile) {
+ 		display: none;
+ 	}
+ }
+
+ .footer__body {
+ 	margin-top: - rem(20);
+ 	display: flex;
+ 	justify-content: space-between;
+
+ 	@media($mobile) {
+ 		flex-direction: column;
+ 		justify-content: center;
+ 		align-items: center;
+ 		margin-top: rem(45);
+ 		gap: rem(15);
+ 	}
+ }
+
+ .footer__body-link {
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(16, 14);
+ 	line-height: 117%;
+
+ 	text-decoration-line: underline;
+ 	text-transform: uppercase;
+
+ 	color: rgba(255, 255, 255, 0.63);
+
+ 	transition: .4s;
+
+ 	@media(hover:hover) {
+ 		&:hover {
+ 			color: rgba(255, 255, 255, 1);
+ 			text-decoration: none;
+ 		}
+ 	}
+ }
+
+
+ .footer__right-text {
+
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(30, 27);
+ 	line-height: 103%;
+
+ 	color: #FFFFFF;
+ }
+
+ .footer__right {
+ 	max-width: rem(345);
+ }
+
+ .footer__contact-link {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: rem(67);
+ 	height: rem(67);
+ 	background: rgba(217, 217, 217, 0.11);
+ 	border-radius: rem(7);
+ 	flex-shrink: 0;
+
+ 	img,
+ 	svg {
+ 		width: rem(24);
+ 		height: rem(24);
+ 		flex-shrink: 0;
+ 		object-fit: contain;
+ 	}
+ }
+
+ .footer__contact-list {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: flex-start;
+ 	gap: rem(14);
+ 	padding-top: rem(38);
+
+ 	@media($mobile) {
+ 		padding-top: rem(27);
+ 	}
+ }
+
+ .footer__menu {
+ 	padding-right: rem(37);
+
+ 	@media($tablet) {
+ 		display: none;
+ 	}
+ }
+
+ .footer__menu-link {
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(18, 15);
+ 	line-height: 136%;
+
+ 	letter-spacing: -0.03em;
+ 	text-transform: uppercase;
+ 	color: #FFFFFF;
+ 	transition: .4s;
+
+ 	@media(hover:hover) {
+ 		&:hover {
+ 			opacity: .7;
+ 		}
+ 	}
+
+ }
+
+ .footer__menu-inner {
+ 	display: block;
+ }
+
+ .footer__menu-inner+.footer__menu-inner {
+ 	padding-top: rem(18);
+ }
+
+ .footer__menu-title {
+ 	padding-bottom: 20px;
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(18, 18);
+ 	line-height: 136%;
+
+ 	letter-spacing: 0.03em;
+
+ 	color: rgba(255, 255, 255, 0.4);
+ }
+
+ .footer__text {
+ 	padding-top: rem(30);
+ 	max-width: rem(276);
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(14, 13);
+ 	line-height: 136%;
+ 	letter-spacing: 0.05em;
+ 	color: rgba(255, 255, 255, 0.4);
+
+ 	@media($tablet) {
+ 		padding-top: rem(18);
+ 	}
+ }
+
+ .footer__head {
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+
+ 	position: relative;
+
+ 	@media($tablet) {
+ 		padding-top: rem(24);
+ 		margin-top: rem(64);
+
+ 		&::after {
+ 			content: "";
+ 			width: 100%;
+ 			height: rem(1);
+ 			position: absolute;
+ 			top: 0;
+ 			left: 0;
+ 			background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.09%, rgba(255, 255, 255, 0.41) 25.74%, rgba(255, 255, 255, 0.41) 50.91%, rgba(255, 255, 255, 0.41) 76.55%, rgba(255, 255, 255, 0) 96.88%);
+ 		}
+ 	}
+
+ }
+
+ .footer__logo {
+
+ 	font-style: normal;
+ 	font-weight: 400;
+ 	@include fluid-text(27, 20);
+ 	line-height: 136%;
+ 	color: #FFFFFF;
+ }
+
+ .footer__btn-open {
+ 	flex-shrink: 0;
+ 	display: none;
+ 	align-items: center;
+ 	justify-content: center;
+ 	border-radius: 50%;
+ 	width: rem(46);
+ 	height: rem(46);
+ 	background: #FF6500;
+
+ 	@media($tablet) {
+ 		display: flex;
+ 	}
+
+ 	img,
+ 	svg {
+ 		flex-shrink: 0;
+ 		object-fit: contain;
+ 		width: rem(16);
+ 		height: rem(12);
+ 	}
+ }
+
+ .footer__container {
+ 	position: relative;
+
+ 	&::after {
+ 		content: "";
+ 		width: 100%;
+ 		height: rem(1);
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		background: linear-gradient(90deg, rgba(255, 255, 255, 0) -0.02%, rgba(255, 255, 255, 0.41) 24.22%, rgba(255, 255, 255, 0.41) 48%, rgba(255, 255, 255, 0.41) 72.24%, rgba(255, 255, 255, 0) 91.44%);
+
+ 		@media($tablet) {
+ 			background: none;
+ 			width: 0;
+ 		}
+ 	}
+ }
+
+ .footer {
+ 	padding-top: rem(15);
+ 	padding-bottom: rem(120);
+
+ 	@media($mobile) {
+ 		padding-bottom: rem(50);
+ 	}
+ }
+
+ .footer__top {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	padding-top: rem(60);
+
+ 	@media($tablet) {
+ 		flex-direction: column-reverse;
+ 	}
+
+ 	@media($mobile) {
+ 		padding-top: rem(15);
+ 	}
+ }

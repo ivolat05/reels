@@ -19,7 +19,7 @@ document.addEventListener("click", (event) => {
 	const menu = document.querySelector(".header__menu");
 	if (!menu) return;
 
-	if (target.closest(".header__btn-open")) {
+	if (target.closest(".button-open-menu")) {
 		lockScroll();
 		openMenu(menu);
 	}
