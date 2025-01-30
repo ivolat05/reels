@@ -6,3 +6,5 @@
 --include("components/menu.js")
 --include("swipers/swiper.js")
 --include("components/accordion.js")
+--include("components/animation.js")
+
